@@ -1,6 +1,6 @@
 import OnBoardTab from "../../components/OnBoardTab/OnBoardTab";
 
-const KycOnboard = () => {
+const KycBoard = () => {
   return (
     <>
       <OnBoardTab />
@@ -8,4 +8,4 @@ const KycOnboard = () => {
   );
 };
 
-export default KycOnboard;
+export default KycBoard;

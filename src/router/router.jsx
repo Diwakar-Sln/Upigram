@@ -10,7 +10,7 @@ import Login from "../pages/auth/Login";
 import Forgotpassword from "../pages/auth/Forgotpassword";
 import OtpVerification from "../pages/auth/OtpVerification";
 import Setpassword from "../pages/auth/Setpassword";
-import KycOnboard from "../pages/KycOnboard/KycOnboard";
+import KycBoard from "../pages/kycOnboard/KycBoard";
 
 const router = Router([
   {
@@ -45,7 +45,7 @@ const router = Router([
     children: [
       {
         path: "/merchant",
-        element: <KycOnboard/> ,
+        element: <KycBoard />,
       },
     ],
   },
