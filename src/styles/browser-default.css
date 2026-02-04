@@ -1,0 +1,149 @@
+/* checkbox custom style and switch */
+input[type=checkbox] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background: none;
+  cursor: pointer;
+  line-height: 0;
+  margin: 0 0.6em 0 0;
+  outline: 0;
+  padding: 0 !important;
+  vertical-align: text-top;
+  height: 20px;
+  width: 20px;
+  opacity: 1;
+}
+
+input[type=checkbox]:checked {
+  background-color: var(--highlight-color);
+  opacity: 1;
+  border-color: var(--highlight-color);
+}
+
+input[type=checkbox]:before {
+  content: "";
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  width: 4px;
+  height: 10px;
+  z-index: 2;
+}
+
+input[type=checkbox]:before {
+  border: solid var(--text-color);
+  border-width: 0 2px 2px 0;
+  margin: -1px -1px 0 -1px;
+  transform: rotate(45deg) translate(-50%, -50%);
+}
+
+input[type=checkbox]:focus {
+  box-shadow: none;
+  border-color: var(--highlight-color);
+}
+
+/* form custom radio button */
+input[type=radio] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  background-color: transparent;
+  border: 1px solid;
+  border-color: var(--highlight-color);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: -1px;
+  margin-right: 4px;
+  cursor: pointer;
+}
+
+input[type=radio]:checked {
+  background-color: transparent;
+  color: var(--highlight-color);
+  border-color: var(--highlight-color);
+  outline: 0;
+}
+
+input[type=radio]:checked:after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  color: var(--highlight-color);
+  width: 10px;
+  height: 10px;
+  left: 4px;
+  background-color: var(--highlight-color);
+  border-radius: 50%;
+}
+
+input[type=radio]+label+.input[type=radio] {
+  margin-left: 2rem;
+}
+
+input[type=radio]:focus {
+  box-shadow: none;
+  border-color: var(--highlight-color);
+}
+
+/* form switch custom */
+
+.form-switch .form-check-input:checked {
+  background-color: var(--bs-green);
+  border-color: var(--bs-green);
+}
+
+.form-switch .form-check-input {
+  height: 1.25rem;
+  width: 2.5rem;
+}
+
+::-webkit-input-placeholder {
+  color: var(--bs-gray-500) !important;
+}
+
+::-moz-placeholder {
+  color: var(--bs-gray-500) !important;
+}
+
+::placeholder {
+  color: var(--bs-gray-500) !important;
+  opacity: 1;
+  /* Firefox */
+}
+
+::-ms-input-placeholder {
+  /* Edge 12-18 */
+  color: var(--bs-gray-500);
+}
+
+/* customized slim scroll */
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 3px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #f1f1f1;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #bfbfbf;
+  ;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 255, 255, 0.3);
+}

@@ -1,0 +1,14 @@
+/* Animate class begins here */
+/* 
+#animationCard {
+  width: 100%;
+  height: auto;
+} */
+
+#treeMoney {
+  width: 150px;
+  height: auto;
+  position: absolute;
+  right: -10px;
+  bottom: -13px;
+}
