@@ -1,5 +1,5 @@
 import logincircle from "../assets/images/login_circle_bg.svg";
-import logo from "../assets/images/logo.svg";
+import logo from "../assets/images/Logo.svg";
 // Lottie animation
 import Lottie from "lottie-react";
 import animationData from "../assets/animation/login.json";
