@@ -4,7 +4,6 @@ const Input = ({
   type = "text",
   className = "",
   placeholder = "",
-  value = "",
   onChange,
   required = false,
   id,
@@ -18,7 +17,6 @@ const Input = ({
       placeholder={placeholder}
       className={`form-control ${className}`}
       id={id}
-      value={value}
       onChange={onChange}
       required={required}
       {...rest}
