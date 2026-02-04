@@ -45,7 +45,7 @@ const router = Router([
     children: [
       {
         path: "/merchant",
-        element: <KycOnboard />,
+        element: <KycOnboard/> ,
       },
     ],
   },
