@@ -11,6 +11,7 @@ import Forgotpassword from "../pages/auth/Forgotpassword";
 import OtpVerification from "../pages/auth/OtpVerification";
 import Setpassword from "../pages/auth/Setpassword";
 import KycBoard from "../pages/kycOnboard/KycBoard";
+import Dashboard from "../pages/Dashboard";
 
 const router = Router([
   {
@@ -27,15 +28,15 @@ const router = Router([
       },
       {
         path: "/forgot-password",
-        element: <Forgotpassword/> ,
+        element: <Forgotpassword />,
       },
       {
         path: "/password-otp",
-        element: <OtpVerification/> ,
+        element: <OtpVerification />,
       },
       {
         path: "/set-password",
-        element: <Setpassword/> ,
+        element: <Setpassword />,
       },
     ],
   },
@@ -50,8 +51,14 @@ const router = Router([
     ],
   },
   {
-    path: "/admin",
+    path: "/dashboard",
     element: <MainLayout />,
+    children: [
+      {
+        path: "/dashboard",
+        element: <Dashboard />,
+      },
+    ],
   },
 ]);
 

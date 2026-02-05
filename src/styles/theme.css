@@ -1938,3 +1938,64 @@ img.pdf {
   background: linear-gradient(#E7D1D1, #fff) !important;
 
 }
+
+.profile-dropdown {
+  --user-firstLetter-color: #003729;
+  --user-firstLetter-bg: #A4F2A866;
+}
+
+.profile-dropdown .dropdown-toggle::after {
+  display: none;
+}
+
+.profile-dropdown .btn.show,
+.profile-dropdown .btn:active {
+  border-color: transparent;
+}
+
+.profile-dropdown .btn {
+  transition: transform o.3s ease;
+}
+
+.profile-dropdown .btn.show>.bi-chevron-down {
+  transform: rotate(180deg);
+}
+
+.profile-dropdown .dropdown-menu {
+  width: 23.75rem;
+  box-shadow: 0px 4px 16px 0px #0000001F;
+  border: none;
+}
+
+.user-firstletter {
+  background-color: var(--user-firstLetter-bg);
+  padding: var(--border-radius-8) var(--font-size-14);
+  border-radius: var(--border-radius-6);
+}
+
+.user-firstletter span {
+  color: var(--user-firstLetter-color);
+}
+
+.profile-dropdown .dropdown-menu {
+  padding: calc(var(--font-size-10) * 2);
+}
+
+.profile-dropdown .dropdown-menu .user-firstletter {
+  padding: var(--font-size-12) var(--font-size-18);
+}
+
+.profile-dropdown .dropdown-menu.show {
+  display: flex;
+  flex-direction: column;
+  gap: var(--common-size);
+}
+
+.profile-dropdown .dropdown-item:active {
+  background-color: transparent;
+  color: var(--bs-dropdown-link-color);
+}
+
+.profile-dropdown .dropdown-item:hover {
+  background-color: transparent !important;
+}
